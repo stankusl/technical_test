@@ -1,0 +1,482 @@
+/* web font */
+@font-face {
+    font-family: 'LatoLight';
+    src: url("../fonts/Lato-Lig-webfont.eot");
+    src: url("../fonts/Lato-Lig-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Lig-webfont.woff") format("woff"), url("../fonts/Lato-Lig-webfont.ttf") format("truetype"), url("../fonts/Lato-Lig-webfont.svg#LatoLight") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: url("../fonts/Lato-Bol-webfont.eot");
+    src: url("../fonts/Lato-Bol-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bol-webfont.woff") format("woff"), url("../fonts/Lato-Bol-webfont.ttf") format("truetype"), url("../fonts/Lato-Bol-webfont.svg#Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #ECF0F1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 15px;
+    border: solid 2px #acc4b7;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+}
+
+.checkbox:focus {
+    outline: none;
+}
+
+.checkbox.checked {
+    background-color: #3498db;
+}
+
+.checkbox:hover {
+    -webkit-box-shadow: 0 0 2px #3498db;
+            box-shadow: 0 0 2px #3498db;
+}
+
+header {
+    max-width: 990px;
+    min-width: 300px;
+    margin: 0 auto;
+    background: #2C3E50;
+    -webkit-border-radius: 300px;
+            border-radius: 300px;
+    max-width: 300px;
+    width: 300px;
+    position: relative;
+    top: -100px;
+}
+
+h1 {
+    font-family: 'LatoLight', Lato, arial, sans-serif;
+    font-weight: 100;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    line-height: 60px;
+    padding: 120px 0;
+    margin: 0;
+}
+
+h1 span {
+    font-family: 'LatoBold', Lato, arial, sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'LatoBold', Lato, arial, sans-serif;
+    font-weight: 100;
+    color: #2C3E50;
+}
+
+.core-section {
+    position: relative;
+    margin: 50px auto 20px;
+    border-bottom: 1px solid white;
+}
+
+.core-section h2 {
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    margin: 0;
+    padding: 10px;
+    background: #bbb;
+    width: 200px;
+    height: 55px;
+}
+
+#compare-bugs {
+    min-height: 230px;
+    position: relative;
+}
+
+#comparisonBase {
+    background: url("../img/comparison-section-base.png") no-repeat;
+    width: 385px;
+    height: 110px;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+table#doodle-list {
+    font-size: 1.8em;
+    margin-left: 100px;
+    font-family: 'LatoLight', Lato, arial, sans-serif;
+}
+
+table {
+    font-size: 1.4em;
+}
+
+th {
+    text-align: left;
+    text-transform: lowercase;
+    vertical-align: top;
+    padding-right: 30px;
+    font-size: 1.6em;
+    white-space: nowrap;
+    font-family: 'LatoBold', Lato, arial, sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+
+th:first-child {
+    text-indent: 100px;
+}
+
+.sortable {
+    cursor: pointer;
+}
+
+th.sortable a {
+    background: url("../img/order-sprite.png") no-repeat 0 8px;
+    text-indent: -1000px;
+    display: inline-block;
+    width: 14px;
+}
+
+th.sortable a:hover {
+    background-position: 0 -42px;
+}
+
+th.sortable a.sort-down {
+    background-position: 0 -92px;
+}
+
+th.sortable a.sort-up {
+    background-position: 0 -142px;
+}
+
+td {
+    line-height: 110px;
+    min-height: 100px;
+    font-size: 1.4em;
+}
+
+td[class^="icon"]:before {
+    width: 60px;
+    display: inline-block;
+    background: #fff;
+    height: 60px;
+    -webkit-border-radius: 100px;
+            border-radius: 100px;
+    font-size: 50px;
+    padding-top: 0;
+    padding-left: 5px;
+    margin-right: 20px;
+    line-height: 60px;
+    -webkit-transition: width 0.1s, height 0.1s, padding 0.1s, font-size 0.1s, color 0.2s, line-height 0.1s;
+    transition: width 0.1s, height 0.1s, padding 0.1s, font-size 0.1s, color 0.2s, line-height 0.1s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+}
+
+tr:hover td[class^="icon"]:before {
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 55px;
+    width: 60px;
+    height: 60px;
+    color: #3498db;
+}
+
+tr:hover td {
+    color: #3498db;
+}
+
+@media (max-width: 800px) {
+    table#doodle-list {
+        font-size: 1em;
+    }
+    td {
+        line-height: 40px;
+        height: 50px;
+    }
+    th:first-child {
+        text-indent: 50px;
+        min-width: 120px;
+    }
+    th:nth-child(2) {
+        min-width: 60px;
+    }
+    td[class^="icon"]:before {
+        width: 30px;
+        display: inline-block;
+        background: #fff;
+        height: 30px;
+        -webkit-border-radius: 50px;
+                border-radius: 50px;
+        font-size: 30px;
+        padding: 5px;
+        margin-right: 10px;
+        line-height: 30px;
+        -webkit-transition: width 0.1s, height 0.1s, padding 0.1s, font-size 0.1s, color 0.2s, line-height 0.1s;
+        transition: width 0.1s, height 0.1s, padding 0.1s, font-size 0.1s, color 0.2s, line-height 0.1s;
+        -webkit-transition-timing-function: ease-in-out;
+                transition-timing-function: ease-in-out;
+    }
+    tr:hover td[class^="icon"]:before {
+        padding: 0;
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+        color: #3498db;
+        line-height: 30px;
+    }
+}
+
+@font-face {
+    font-family: 'doodlebug';
+    src: url("../fonts/doodlebug.eot");
+    src: url("../fonts/doodlebug.eot?#iefix") format("embedded-opentype"), url("../fonts/doodlebug.woff") format("woff"), url("../fonts/doodlebug.ttf") format("truetype"), url("../fonts/doodlebug.svg#LatoLight") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before {
+    font-family: 'doodlebug';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-copy-bug:before {
+    content: "\e600";
+}
+
+.icon-evil-bug:before {
+    content: "\e601";
+}
+
+.icon-mad-bug:before {
+    content: "\e602";
+}
+
+.icon-mono-bug:before {
+    content: "\e603";
+}
+
+.icon-odd-bug:before {
+    content: "\e604";
+}
+
+.icon-run-bug:before {
+    content: "\e605";
+}
+
+.friends {
+    border-collapse: collapse;
+}
+
+.friends th {
+    border-bottom: 1px solid;
+}
+
+.friends td,
+.friends th {
+    border-left: 1px solid;
+    padding: 5px 10px;
+}
+
+.friends td:first-child,
+.friends th:first-child {
+    border-left: none;
+}
+
+.team {
+    font-weight: lighter;
+}
+
+.display-sortable {
+    display: inline-block;
+    width: 14px;
+    height: 34px;
+    background: url("../img/order-sprite.png") no-repeat 0 8px;
+}
+
+.sortorder:after {
+    display: inline-block;
+    width: 14px;
+    height: 34px;
+    background: url("../img/order-sprite.png") no-repeat 0 -93px;
+    content: '';
+}
+
+.sortorder.reverse:after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 34px;
+    background: url("../img/order-sprite.png") no-repeat 0 -143px;
+}
+
+#comparison-area {
+    margin-top: 100px;
+}
+
+#comparison-area #info-text {
+    margin-top: 45px;
+    font-size: 24px;
+    font-family: Lato, arial, sans-serif;
+    font-weight: lighter;
+    height: 160px;
+}
+
+#comparison-area #stats-holder {
+    height: 179px;
+    margin-top: 45px;
+    font-family: Lato, arial, sans-serif;
+    -webkit-transition: height 2s ease;
+    transition: height 2s ease;
+}
+
+#comparison-area #stats-holder .stats {
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+#comparison-area #stats-holder .stats .attribute-name {
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+#comparison-area #stats-holder .stats .greater {
+    color: #6ee80c !important;
+    font-weight: bold;
+}
+
+#comparison-area #stats-holder .stats .leser {
+    color: #e74c3c !important;
+    font-weight: bold;
+}
+
+#comparison-area #stats-holder .stats .left-stat {
+    padding-left: 60px;
+    font-size: 24px;
+    color: #8c97a0;
+    font-weight: bold;
+}
+
+#comparison-area #stats-holder .stats .right-stat {
+    padding-right: 48px;
+    font-size: 24px;
+    color: #8c97a0;
+    font-weight: bold;
+}
+
+#comparison-area .comparison-images {
+    font-family: 'LatoBold', Lato, arial, sans-serif;
+}
+
+#comparison-area .comparison-images .compare1 {
+    display: block;
+    position: relative;
+}
+
+#comparison-area .comparison-images .compare1 .holder {
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #2c3e50;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: block;
+    font-size: 60px;
+    color: #fff;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+#comparison-area .comparison-images .compare1 .holder.active {
+    background: #fff;
+}
+
+#comparison-area .comparison-images .compare1 .holder.active > span {
+    font-size: 1.35em;
+    color: #2c3e50;
+}
+
+#comparison-area .comparison-images .compare-vs {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'LatoBold', Lato, arial, sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    color: #2c3e50;
+}
+
+#comparison-area .comparison-images .compare2 {
+    display: block;
+    position: relative;
+}
+
+#comparison-area .comparison-images .compare2 .holder {
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #2c3e50;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: block;
+    font-size: 60px;
+    color: #fff;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+#comparison-area .comparison-images .compare2 .holder.active {
+    background: #fff;
+}
+
+#comparison-area .comparison-images .compare2 .holder.active > span {
+    font-size: 1.35em;
+    color: #2c3e50;
+}
+
+footer {
+    padding-top: 40px;
+}
+
+footer p {
+    text-align: center;
+    display: none;
+}

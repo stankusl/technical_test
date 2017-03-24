@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Vendors Styles -->
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/main.css">
+    <title>Harness Property</title>
+</head>
+
+    <body>
+        <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1>doodle<span>:bug</span></h1>
+        </header>
+
+        <div class="container">
+
+            <section id="bug-list" class="col-xs-12 col-lg-8">
+                <table name="doodle-list" description="All available bugs">
+                    <thead>
+                        <tr>
+                            <th class="sortable">
+                                Doodlee
+                                <span class="display-sortable"></span>
+                                <span class="sortorder reverse"></span>
+                            </th>
+                            <th class="sortable">
+                                Team
+                                <span class="display-sortable"></span>
+                                <span class="sortorder reverse"></span>
+                            </th>
+                            <th>vs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr style="cursor: pointer;">
+                            <td class="icon-mono-bug">mono<b>:bug</b></td>
+                            <td class="team ng-binding">foo</td>
+                            <td>
+                                <div class="checkbox "></div>
+                            </td>
+                        </tr>
+
+                        <tr style="cursor: pointer;">
+                            <td class="icon-evil-bug">evil<b>:bug</b></td>
+                            <td class="team ng-binding">doo</td>
+                            <td>
+                                <div class="checkbox "></div>
+                            </td>
+                        </tr>
+
+                        <tr style="cursor: pointer;">
+                            <td class="icon-odd-bug">odd<b>:bug</b></td>
+                            <td class="team ng-binding">woo</td>
+                            <td>
+                                <div class="checkbox "></div>
+                            </td>
+                        </tr>
+
+                        <tr style="cursor: pointer;">
+                            <td class="icon-run-bug">run<b>:bug</b></td>
+                            <td class="team ng-binding">poo</td>
+                            <td>
+                                <div class="checkbox "></div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <div class="clearfix"></div>
+            </section>
+
+            <section class="col-xs-12 col-lg-4">
+                <div id="comparison-area">
+
+                    <div class="comparison-images text-xs-center row">
+                        <div class="compare1 col-xs-4">
+                            <span class="holder ">
+                              <span class="icon--bug"></span>
+                              <span>?</span>
+                            </span>
+                        </div>
+
+                        <div class="compare-vs col-xs-4">
+                            vs
+                        </div>
+
+                        <div class="compare2 col-xs-4">
+                            <span class="holder ">
+                              <span class="icon--bug"></span>
+                              <span>?</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <p id="info-text" class="text-xs-center ng-scope">
+                        Select two doodles to<br> compare which has the<br> skills you like most.
+                    </p>
+
+                    <div class="stats row">
+                        <div class="clearfix"></div>
+                        <div id="comparisonBase"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+
+            </section>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <footer>
+            <p>Made by exe1</p>
+        </footer>
+
+    </body>
+</html>
